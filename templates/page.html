@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{- template "head.html" . -}}
+</head>
+<body>
+	{{- template "sidebar.html" . -}}
+	<div id="mobile-panel" class="container slideout-panel slideout-panel-left">
+		<div class="header">
+			{{- template "header.html" . -}}
+		</div>
+		<div class="content">
+			<div class="pagination hide-mobile">
+				<a href="javascript:history.back(-1);" class="prev">< Back</a>
+			</div>
+			{{- template "content.html" . -}}
+		</div>
+		<div class="footer">
+			{{- template "footer.html" . -}}
+		</div>
+	</div>
+	{{- template "extra.html" . -}}
+</body>
+
+</html>

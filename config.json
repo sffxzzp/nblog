@@ -1,0 +1,11 @@
+{
+    "debug": false,
+    "ip": "0.0.0.0",
+    "port": 80,
+    "site_name": "NBlog",
+    "favicon": "/static/favicon.ico",
+    "more": 100,
+    "start": "2021",
+    "apikey": "",
+    "database": ""
+}

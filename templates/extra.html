@@ -1,0 +1,26 @@
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js"></script>
+<script>
+	mobileNavbar = function () {
+		const c = $('#mobile-navbar'),
+			b = $('.mobile-navbar-icon'),
+			a = new Slideout({
+				panel: document.getElementById('mobile-panel'),
+				menu: document.getElementById('mobile-menu'),
+				padding: 180,
+				tolerance: 70
+			});
+		a.disableTouch(), b.click(function () {
+			a.toggle()
+		}), a.on('beforeopen', function () {
+			c.addClass('fixed-open'), b.addClass('icon-click').removeClass('icon-out')
+		}), a.on('beforeclose', function () {
+			c.removeClass('fixed-open'), b.addClass('icon-out').removeClass('icon-click')
+		}), $('#mobile-panel').on('touchend', function () {
+			a.isOpen() && b.click()
+		})
+	}
+	$(document).ready(function () {
+		mobileNavbar()
+	})
+</script>

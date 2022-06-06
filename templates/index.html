@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{- template "head.html" . -}}
+</head>
+<body>
+	{{- template "sidebar.html" . -}}
+	<div id="mobile-panel" class="container slideout-panel slideout-panel-left">
+		<div class="header">
+			{{- template "header.html" . -}}
+		</div>
+		<div class="content">
+			{{- template "list.html" . -}}
+		</div>
+		<div class="footer">
+			{{- template "footer.html" . -}}
+		</div>
+	</div>
+	{{- template "extra.html" . -}}
+</body>
+
+</html>

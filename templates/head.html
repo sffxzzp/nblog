@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>{{.Title}}</title>
+<link rel="icon" href="{{.FavIcon}}" type="image/x-icon" />
+
+<link rel="stylesheet" href="/static/css/style.css">
+
+{{ htmlSafe `<!--[if lte IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->` }}
