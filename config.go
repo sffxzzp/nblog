@@ -55,7 +55,11 @@ func initConfigs() config {
 		}
 		os.Exit(0)
 	}
-	cfg.APIKey = os.Getenv("apikey")
-	cfg.Database = os.Getenv("database")
+	if os.Getenv("apikey") != "" {
+		cfg.APIKey = os.Getenv("apikey")
+	}
+	if os.Getenv("database") != "" {
+		cfg.Database = os.Getenv("database")
+	}
 	return cfg
 }
