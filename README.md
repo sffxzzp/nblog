@@ -15,21 +15,9 @@ Notion 数据库格式
 ------
 ``` json
 [
-    {
-        name: "Title",
-        type: "Title"
-    },
-    {
-        name: "Published",
-        type: "Checkbox"
-    },
-    {
-        name: "Content",
-        type: "Text"
-    },
-    {
-        name: "Time",
-        type: "Date"
-    }
+    {"name":"Title", "type":"Title"},
+    {"name":"Published", "type":"Checkbox"},
+    {"name":"Content", "type":"Text"},
+    {"name":"Time", "type":"Date"}
 ]
 ```
